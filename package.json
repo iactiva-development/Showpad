@@ -1,0 +1,18 @@
+{
+  "name": "showpad-offline-web",
+  "version": "1.0.0",
+  "description": "Mini-web HTML5 offline para Showpad - Digital Frame / Coloplast",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server . -p 8080 -o",
+    "build": "node scripts/build.js",
+    "optimize": "node scripts/optimize-assets.js"
+  },
+  "keywords": ["showpad", "offline", "html5", "ipad"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "archiver": "^6.0.1",
+    "sharp": "^0.33.0"
+  }
+}

@@ -1,0 +1,1 @@
+Add-Type -AssemblyName System.Drawing; $img = [System.Drawing.Image]::FromFile('assets\new_assets\Diapo 02\navi-concept 2.0.jpg'); Write-Output "Width: $($img.Width) Height: $($img.Height) Format: $($img.PixelFormat)"
