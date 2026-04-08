@@ -134,8 +134,8 @@
                     <h2 class="detail-sidebar__title">SpeediCath<sup>®</sup>Navi</h2>
                     <nav class="detail-nav">
                         <!-- Botón Activo con submenú anidado -->
-                        <div class="detail-nav__group detail-nav__group--active">
-                            <a href="#" class="detail-nav__item detail-nav__item--active" data-section="punta">
+                        <div class="detail-nav__group">
+                            <a href="#" class="detail-nav__item" data-section="punta">
                                 Punta en forma<br>de gota de agua
                             </a>
                             <ul class="detail-nav__submenu">
@@ -246,13 +246,22 @@
                         <div class="detail-subview" data-subview="desarrollo">
                             <button class="detail-subview__back" data-back-subview>← Volver</button>
 
+                            <div style="margin-bottom: 20px;">
+                                <h2 class="detail-section__subtitle" style="margin-top: 0; margin-bottom: 0px;">
+                                    Punta
+                                    redonda en forma de gota de agua</h2>
+                                <h3 class="detail-section__category"
+                                    style="margin-top: 0; margin-bottom: 0px; color: var(--speedicath-teal-dark); font-size: 16px; font-weight: 500;">
+                                    ¿Cómo se desarrolla la punta?</h3>
+                            </div>
+
                             <!-- Caja de Cita Intro -->
-                            <div class="detail-section__quote" style="margin-top: 20px;">
+                            <div class="detail-section__quote" style="margin-top: 0; margin-bottom: 10px;">
                                 <p><strong>Más de 1.000 prototipos para lograr la perfecta geometría de la punta
                                         flexible.</strong></p>
                             </div>
 
-                            <div class="development-infographic-grid">
+                            <div class="development-infographic-grid" style="margin-top: 10px;">
                                 <div class="development-step">
                                     <img src="assets/new_assets/animaciones/animacion sonda  gif 01.gif"
                                         alt="Paso 1 Animación" class="dev-step__anim">
@@ -280,6 +289,16 @@
                         <!-- Sub-vista: ¿Qué logramos con este diseño? -->
                         <div class="detail-subview" data-subview="logramos">
                             <button class="detail-subview__back" data-back-subview>← Volver</button>
+
+                            <div style="margin-bottom: 20px;">
+                                <h2 class="detail-section__subtitle" style="margin-top: 0; margin-bottom: 0px;">
+                                    Punta
+                                    redonda en forma de gota de agua</h2>
+                                <h3 class="detail-section__category"
+                                    style="margin-top: 0; margin-bottom: 0px; color: var(--speedicath-teal-dark); font-size: 16px; font-weight: 500;">
+                                    ¿Qué logramos con este diseño?</h3>
+                            </div>
+
                             <div class="detail-section__grid benefits-grid">
                                 <div class="detail-section__video">
                                     <video controls playsinline preload="auto">
@@ -374,7 +393,7 @@
                                     </button>
                                 </div>
                                 <div class="prototype-display">
-                                    <img id="protoImage" src="assets/new_assets/funciones/A (cortado).png"
+                                    <img id="protoImage" src="assets/new_assets/Diapo 10-11-12/Funcion A - Empujar.png"
                                         alt="Prototipo">
                                 </div>
                             </div>
@@ -701,20 +720,22 @@
                 <!-- Contenido principal -->
                 <main class="detail-content">
                     <!-- Sección: Overview Triple (Vista principal rediseñada) -->
-                    <article class="detail-section detail-section--active detail-section--overview"
-                        data-content="overview-triple" style="padding: 40px 60px;">
+                    <article class="detail-section detail-section--active"
+                        data-content="overview-triple" style="padding: 40px 60px; overflow-y: auto;">
 
-                        <h1 class="detail-section__title"
-                            style="color: var(--speedicath-teal); margin-bottom: 25px; font-weight: 500;">
-                            Tecnología triple acción
-                        </h1>
+                        <div style="width: 100%; max-width: 800px; margin: 0 auto;">
+                            <h1 class="detail-section__title"
+                                style="color: var(--speedicath-teal); margin-bottom: 25px; font-weight: 500;">
+                                Tecnología triple acción
+                            </h1>
 
-                        <div class="triple-video-container"
-                            style="width: 100%; max-width: 700px; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.15); background: #000; margin-top: 20px;">
-                            <video controls playsinline preload="auto"
-                                style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                                <source src="assets/video pag 23.mp4" type="video/mp4">
-                            </video>
+                            <div class="triple-video-container"
+                                style="width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.15); background: #000; margin-top: 20px;">
+                                <video controls playsinline preload="auto"
+                                    style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                                    <source src="assets/video pag 23.mp4" type="video/mp4">
+                                </video>
+                            </div>
                         </div>
                     </article>
 
@@ -779,8 +800,9 @@
                             <!-- Animación inferior (Diapo 21) -->
                             <div class="diapo-animation" style="width: 100%; max-width: 850px; margin-top: 10px;">
                                 <div class="animation-wrapper"
-                                    style="border-radius: 12px; overflow: hidden; margin-top: -20px; background: white;">
-                                    <video autoplay muted loop playsinline style="width: 100%; display: block;">
+                                    style="border-radius: 12px; overflow: hidden; margin-top: -20px; background: transparent; mix-blend-mode: multiply;">
+                                    <video autoplay muted loop playsinline
+                                        style="width: 100%; display: block; background: transparent;">
                                         <source
                                             src="assets/new_assets/Diapo 21/CPCC-SC-Triple Action Coating Technology-animation_h264.mov.mp4"
                                             type="video/mp4">
@@ -796,15 +818,19 @@
                             La importancia de los ojos pulidos y lubricados
                         </h1>
 
-                        <div class="lubricacion-composition" style="display: flex; align-items: flex-start; gap: 40px; max-width: 950px;">
+                        <div class="lubricacion-composition"
+                            style="display: flex; align-items: flex-start; gap: 40px; max-width: 950px;">
                             <!-- Imagen de la punta (Vertical) -->
-                            <div class="lubricacion-punta" style="flex: 0 0 250px; margin-left: 40px; margin-top: 20px;">
-                                <img src="assets/Imagen4 (1).png" alt="Ojos de drenaje pulidos" style="width: 160px; height: auto; display: block; filter: drop-shadow(0 15px 30px rgba(0,0,0,0.12));">
+                            <div class="lubricacion-punta"
+                                style="flex: 0 0 250px; margin-left: 40px; margin-top: 20px;">
+                                <img src="assets/Imagen4 (1).png" alt="Ojos de drenaje pulidos"
+                                    style="width: 160px; height: auto; display: block; filter: drop-shadow(0 15px 30px rgba(0,0,0,0.12));">
                             </div>
 
                             <!-- Vídeo microscópico -->
                             <div class="lubricacion-micro" style="flex: 1; padding-top: 110px; margin-left: -50px;">
-                                <div class="video-container-micro" style="width: 100%; max-width: 450px; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.12);">
+                                <div class="video-container-micro"
+                                    style="width: 100%; max-width: 450px; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.12);">
                                     <video autoplay muted loop playsinline style="width: 100%; display: block;">
                                         <source src="assets/video25(1).mp4" type="video/mp4">
                                     </video>
@@ -987,7 +1013,9 @@
                     <div class="referencias-content">
                         <div class="referencias-header">
                             <h2 class="referencias-title">Referencias</h2>
-                            <p class="referencias-subtitle">SpeediCath<sup>®</sup><span class="navi-text">Navi</span>
+                            <p class="referencias-subtitle">
+                                <img src="assets/new_assets/Logotipos/CPCC-SpeediCath-Navi-Logo-Turquoise-RGB.svg"
+                                    alt="SpeediCath Navi" style="height: 19px; display: block; margin-top: 10px;">
                             </p>
                         </div>
 
@@ -1030,7 +1058,7 @@
                                 </tbody>
                                 <tfoot>
                                     <tr>
-                                        <td colspan="4">Longitud. 40 cm.</td>
+                                        <td colspan="4">Longitud 40 cm - Envase: 60 unidades</td>
                                     </tr>
                                 </tfoot>
                             </table>
@@ -1056,7 +1084,9 @@
                     <div class="referencias-content">
                         <div class="referencias-header">
                             <h2 class="referencias-title">Referencias</h2>
-                            <p class="referencias-subtitle">SpeediCath<sup>®</sup><span class="navi-text">Short</span>
+                            <p class="referencias-subtitle">
+                                <img src="assets/new_assets/Logotipos/CPCC-SpeediCath-Short-Logo-Turquoise-RGB.svg"
+                                    alt="SpeediCath Short" style="height: 19px; display: block; margin-top: 10px;">
                             </p>
                         </div>
 
@@ -1099,7 +1129,7 @@
                                 </tbody>
                                 <tfoot>
                                     <tr>
-                                        <td colspan="4">Longitud. 12 cm.</td>
+                                        <td colspan="4">Longitud 12 cm - Envase: 60 unidades</td>
                                     </tr>
                                 </tfoot>
                             </table>
