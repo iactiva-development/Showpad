@@ -46,9 +46,7 @@
                 <p class="info-panel__text">
                     En Coloplast adoptamos un enfoque holístico para el cuidado de la continencia. Mantener una buena
                     salud de la vejiga consiste en ayudar a los usuarios de catéteres a seguir sus rutinas y, en última
-                    instancia, a potenciar su independencia diaria. Logramos esto mediante un análisis en profundidad de
-                    la salud vesical de cada paciente, su condición física, su bienestar emocional y las decisiones que
-                    toma en su vida cotidiana.
+                    instancia, a potenciar su independencia diaria.
                 </p>
             </div>
             <div class="info-panel__image">
@@ -160,12 +158,17 @@
                             <li><a href="#" class="detail-nav__subitem" data-show-subview="prototipos">Prototipos</a>
                             </li>
                         </ul>
-                        <a href="#" class="detail-nav__item" data-section="sonda">
-                            Sonda flexible
-                        </a>
-                        <a href="#" class="detail-nav__item" data-section="sencilla">
-                            Sencilla de usar
-                        </a>
+                        <div class="detail-nav__group">
+                            <a href="#" class="detail-nav__item" data-section="sonda" data-redirect-to-subview="main">
+                                Sonda flexible y sencilla de usar
+                            </a>
+                            <ul class="detail-nav__submenu">
+                                <li><a href="#" class="detail-nav__subitem" data-show-subview="main">¿Cómo navega
+                                        Speedicath Navi?</a></li>
+                                <li><a href="#" class="detail-nav__subitem" data-show-subview="fluoroscopia">Técnica de
+                                        fluoroscopía</a></li>
+                            </ul>
+                        </div>
                     </nav>
 
 
@@ -216,19 +219,19 @@
                         <!-- Sub-vista: Características -->
                         <div class="detail-subview" data-subview="caracteristicas">
                             <button class="detail-subview__back" data-back-subview>← Volver</button>
+
+                            <div class="detail-subview__header">
+                                <h2 class="detail-section__subtitle">Punta redonda en forma de gota de agua</h2>
+                                <h3 class="detail-section__category">Características</h3>
+                            </div>
+
                             <div class="detail-section__grid">
-                                <div class="detail-section__video" style="margin-top: -50px;">
+                                <div class="detail-section__video">
                                     <img src="assets/new_assets/Diapo 04/CPCC-SC-Navi-product-tip-campaign-Caucasian 2.0.png"
                                         alt="SpeediCath Navi Sonda Flexible" style="width: 100%">
                                 </div>
                                 <div class="detail-section__info">
-                                    <h2 class="detail-section__subtitle" style="margin-top: 0; margin-bottom: -20px;">
-                                        Punta
-                                        redonda en forma de gota de agua</h2>
-                                    <h3 class="detail-section__category"
-                                        style="margin-top: 0; margin-bottom: 0px; color: var(--speedicath-teal-dark); font-size: 16px; font-weight: 500;">
-                                        Características</h3>
-                                    <div class="detail-section__quotes" style="margin-top: -10px;">
+                                    <div class="detail-section__quotes">
                                         <div class="feature-box">
                                             <p>La punta redonda y flexible hace que la sonda suave encuentre el centro
                                                 de la uretra facilitando la inserción.</p>
@@ -447,19 +450,24 @@
                                 </figure>
                             </div>
                             <div class="grip-footer-phrase"
-                                style="text-align: center; margin-top: 50px; color: #1A2437; font-weight: 700; font-size: 26px; text-transform: uppercase; letter-spacing: 1.5px; opacity: 0.9;">
+                                style="text-align: center; margin-top: 50px; color: #1A2437; font-weight: 700; font-size: 26px; letter-spacing: 0.5px; opacity: 0.9;">
                                 No todos los grip de inserción son iguales
                             </div>
                     </article>
 
                     <!-- Sección: Sonda flexible -->
                     <article class="detail-section" data-content="sonda">
-                        <!-- Vista principal -->
+                        <!-- Vista principal: Por defecto muestra el primer apartado -->
                         <div class="detail-subview detail-subview--active" data-subview="main">
-                            <h1 class="detail-section__title">Sonda flexible</h1>
+                            <div style="margin-bottom: 20px;">
+                                <h2 class="detail-section__subtitle" style="margin-top: 0; margin-bottom: 0px;">
+                                    Sonda flexible y sencilla de usar</h2>
+                                <h3 class="detail-section__category"
+                                    style="margin-top: 0; margin-bottom: 0px; color: var(--speedicath-teal-dark); font-size: 16px; font-weight: 500;">
+                                    ¿Cómo navega Speedicath Navi?</h3>
+                            </div>
                             <div class="sonda-videos-container">
                                 <div class="sonda-video-item">
-                                    <h3 class="sonda-video-title">¿Cómo navega Speedicath Navi?</h3>
                                     <div class="sonda-video-wrapper">
                                         <video controls playsinline preload="auto">
                                             <source src="assets/como navega sc navi.mp4" type="video/mp4">
@@ -467,34 +475,43 @@
                                         </video>
                                     </div>
                                 </div>
-                                <div class="sonda-divider"></div>
+                            </div>
+                        </div>
+
+                        <!-- Apartado 2: Técnica de fluoroscopía -->
+                        <div class="detail-subview" data-subview="fluoroscopia">
+                            <div style="margin-bottom: 20px;">
+                                <h2 class="detail-section__subtitle" style="margin-top: 0; margin-bottom: 0px;">
+                                    Sonda flexible y sencilla de usar</h2>
+                                <h3 class="detail-section__category"
+                                    style="margin-top: 0; margin-bottom: 0px; color: var(--speedicath-teal-dark); font-size: 16px; font-weight: 500;">
+                                    Técnica de fluoroscopía</h3>
+                            </div>
+                            <div class="sonda-videos-container">
                                 <div class="sonda-video-item">
-                                    <h3 class="sonda-video-title">Técnica de fluoroscopía</h3>
                                     <div class="sonda-video-wrapper">
                                         <video controls playsinline preload="auto">
                                             <source src="assets/fluoroscopia.mp4" type="video/mp4">
                                             Tu navegador no soporta videos.
                                         </video>
                                     </div>
+                                    <div class="sonda-video-actions"
+                                        style="margin-top: 30px; display: flex; justify-content: center;">
+                                        <a href="assets/new_assets/460N0E2692 - Encarte SC Navi La punta - Diseño.pdf"
+                                            target="_blank" class="btn-pdf">
+                                            <svg fill="currentColor" viewBox="0 0 24 24" width="20" height="20"
+                                                style="margin-right: 12px;">
+                                                <path
+                                                    d="M14,2H6C4.9,2,4,2.9,4,4v16c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V8L14,2z M13,9V3.5L18.5,9H13z M16,18H8v-2h8V18z M16,14H8v-2h8V14z" />
+                                            </svg>
+                                            <span>Conoce más del estudio aquí</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Sección: Sencilla de usar -->
-                    <article class="detail-section" data-content="sencilla">
-                        <h1 class="detail-section__title">Sencilla de usar</h1>
-                        <div class="detail-section__grid">
-                            <div class="detail-section__image">
-                                <img src="assets/pagina 15.jpg" alt="Sencilla de usar">
-                            </div>
-                            <div class="detail-section__info">
-                                <p class="detail-section__quote">
-                                    "No necesita preparación previa solo abrir y extraer la sonda del envase."
-                                </p>
-                            </div>
-                        </div>
-                    </article>
                 </main>
             </div>
 
@@ -554,7 +571,7 @@
                             <div class="overview-hero__text">
                                 <img src="assets/new_assets/Logotipos/CPCC-SpeediCath-Short-Logo-Black-RGB.svg"
                                     alt="SpeediCath Short" class="overview-hero__logo">
-                                <p class="overview-hero__subtitle">Sonda hidrofílica lista para usar<br>en el
+                                <p class="overview-hero__subtitle">Sonda hidrofílica lista para usar en el
                                     cateterismo femenino</p>
                             </div>
                         </div>
@@ -566,22 +583,14 @@
                         <p class="detail-section__quote">
                             Suficientemente corta para tu comodidad. Exactamente precisa para un cateterismo eficaz.
                         </p>
-                        <div class="sonda-precisa-grid">
-                            <!-- Columna izquierda: foto del producto -->
-                            <div class="sonda-precisa-left">
-                                <img src="assets/new_assets/Diapo 15/CPCC-SC Short-Concept-Hand Image-Transparent-02.png"
-                                    alt="SpeediCath Short producto">
+                        <div class="sonda-precisa-horizontal">
+                            <div class="sonda-precisa-anatomy">
+                                <img src="assets/new_assets/Diapo 16/LowRes-CPCC-CPProfessional-HCP-CLS2017-18-Female-Anatomy-1-Illustration es-ES.jpg"
+                                    alt="Anatomía femenina 1">
                             </div>
-                            <!-- Columna derecha: dos ilustraciones de anatomía -->
-                            <div class="sonda-precisa-right">
-                                <div class="sonda-precisa-anatomy">
-                                    <img src="assets/new_assets/Diapo 16/LowRes-CPCC-CPProfessional-HCP-CLS2017-18-Female-Anatomy-1-Illustration es-ES.jpg"
-                                        alt="Anatomía femenina 1">
-                                </div>
-                                <div class="sonda-precisa-anatomy">
-                                    <img src="assets/new_assets/Diapo 16/LowRes-CPCC-CPProfessional-HCP-CLS2017-18-Female-Anatomy-2-Illustration.jpg"
-                                        alt="Anatomía femenina 2">
-                                </div>
+                            <div class="sonda-precisa-anatomy">
+                                <img src="assets/new_assets/Diapo 16/LowRes-CPCC-CPProfessional-HCP-CLS2017-18-Female-Anatomy-2-Illustration.jpg"
+                                    alt="Anatomía femenina 2">
                             </div>
                         </div>
                     </article>
@@ -635,15 +644,13 @@
                     <!-- Sección: Sencilla de usar -->
                     <article class="detail-section" data-content="sencilla-short">
                         <h1 class="detail-section__title">Sencilla de usar</h1>
-                        <div class="detail-section__grid">
-                            <div class="detail-section__image">
-                                <img src="assets/new_assets/Diapo 18/pag 21.png" alt="Sencilla de usar">
-                            </div>
-                            <div class="detail-section__info">
-                                <p class="detail-section__quote">
-                                    No necesita preparación previa solo abrir y extraer la sonda del envase.
-                                </p>
-                            </div>
+                        
+                        <div class="detail-section__quote">
+                            <p>No necesita preparación previa solo abrir y extraer la sonda del envase.</p>
+                        </div>
+
+                        <div class="sencilla-image-container">
+                            <img src="assets/new_assets/Diapo 18/pag 21.png" alt="Sencilla de usar" class="sencilla-img">
                         </div>
                     </article>
 
@@ -700,41 +707,84 @@
                 <!-- Sidebar izquierda -->
                 <aside class="detail-sidebar">
                     <div class="detail-sidebar__logo-container"
-                        style="padding: 0 0 20px 0; margin-top: -15px; display: flex; justify-content: center;">
+                        style="padding: 0 0 20px 0; margin-top: -35px; display: flex; justify-content: center;">
                         <img src="assets/Triple action image.png" alt="Triple Action Logo"
-                            style="max-width: 220px; height: auto;">
+                            style="max-width: 319.44px; max-height: 116.16px; height: auto; object-fit: contain;">
                     </div>
                     <nav class="detail-nav">
-                        <a href="#" class="detail-nav__item" data-section="overview-triple">
+                        <a href="#" class="detail-nav__item" data-section="tecnologia-video">
                             Tecnología
                         </a>
                         <a href="#" class="detail-nav__item" data-section="caracteristicas-triple">
                             Características
                         </a>
                         <a href="#" class="detail-nav__item" data-section="lubricacion-ojos">
-                            Lubricación
+                            Ojos pulidos y lubricados
                         </a>
                     </nav>
                 </aside>
 
                 <!-- Contenido principal -->
                 <main class="detail-content">
-                    <!-- Sección: Overview Triple (Vista principal rediseñada) -->
-                    <article class="detail-section detail-section--active"
-                        data-content="overview-triple" style="padding: 40px 60px; overflow-y: auto;">
+                    <!-- Sección: Vista por defecto (Overview Triple) -->
+                    <article class="detail-section detail-section--active detail-section--overview"
+                        data-content="overview-triple">
+                        <div class="overview-hero">
+                            <img src="assets/new_assets/imagen tact portada.pdf.png"
+                                alt="Triple Action Coating Technology" class="overview-hero__bg"
+                                id="overview-triple-bg">
+                            <div class="overview-hero__text">
+                                <img src="assets/Triple action image.png" alt="Triple Action Coating Technology"
+                                    class="overview-hero__logo">
+                            </div>
+                        </div>
+                    </article>
 
-                        <div style="width: 100%; max-width: 800px; margin: 0 auto;">
+                    <!-- Sección: Tecnología (Vídeo) -->
+                    <article class="detail-section" data-content="tecnologia-video"
+                        style="padding: 40px 60px; overflow-y: auto;">
+
+                        <div style="width: 100%; max-width: 1080px; margin: 0 auto;">
                             <h1 class="detail-section__title"
                                 style="color: var(--speedicath-teal); margin-bottom: 25px; font-weight: 500;">
                                 Tecnología triple acción
                             </h1>
 
-                            <div class="triple-video-container"
-                                style="width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.15); background: #000; margin-top: 20px;">
-                                <video controls playsinline preload="auto"
-                                    style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                                    <source src="assets/video pag 23.mp4" type="video/mp4">
-                                </video>
+                            <!-- Layout: Vídeo a la izquierda + Texto a la derecha -->
+                            <div style="display: flex; gap: 30px; align-items: flex-start; margin-top: 20px;">
+                                <!-- Vídeo -->
+                                <div class="triple-video-container"
+                                    style="flex: 1.5; aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.15); background: #000; min-width: 0;">
+                                    <video controls playsinline preload="auto"
+                                        style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                                        <source src="assets/video pag 23.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+
+                                <!-- Texto a la derecha del vídeo -->
+                                <div style="flex: 0.5; min-width: 220px;">
+                                    <p style="color: var(--speedicath-teal); font-size: 1.25rem; font-weight: 500; line-height: 1.5; margin: 0 0 15px 0;">
+                                        La nueva lubricación está formada por 3 componentes:
+                                    </p>
+                                    <ul style="list-style: disc; padding-left: 20px; margin: 0; color: #333; font-size: 1.15rem; line-height: 1.8;">
+                                        <li>Polivinilpirrolidona (PVP)</li>
+                                        <li>Cloruro Sódico (NaCl)</li>
+                                        <li>Urea</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Texto descriptivo debajo del vídeo -->
+                            <div style="margin-top: 30px; color: #333; font-size: 1.15rem; line-height: 1.7;">
+                                <p style="margin: 0 0 12px 0;">
+                                    La lubricación de SpeediCath es excepcionalmente suave, reduciendo la fricción entre la sonda
+                                    y la mucosa al mínimo. Gracias a los enlaces especiales entre las moléculas de PVP, la
+                                    lubricación de SpeediCath tiene:
+                                </p>
+                                <ul style="list-style: disc; padding-left: 20px; margin: 0;">
+                                    <li>Máxima suavidad que produce la mínima fricción</li>
+                                    <li>Superficie homogénea a lo largo de toda la sonda</li>
+                                </ul>
                             </div>
                         </div>
                     </article>
@@ -798,11 +848,12 @@
                             </div>
 
                             <!-- Animación inferior (Diapo 21) -->
-                            <div class="diapo-animation" style="width: 100%; max-width: 850px; margin-top: 10px;">
+                            <div class="diapo-animation"
+                                style="width: calc(100% - 20px); max-width: 800px; margin: -10px 0 20px 0; margin-left: 0;">
                                 <div class="animation-wrapper"
-                                    style="border-radius: 12px; overflow: hidden; margin-top: -20px; background: transparent; mix-blend-mode: multiply;">
+                                    style="border-radius: 24px; overflow: hidden; border: 3px solid #00a0af; background: #fff; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12); padding: 4px; position: relative;">
                                     <video autoplay muted loop playsinline
-                                        style="width: 100%; display: block; background: transparent;">
+                                        style="width: 100%; display: block; transform: scale(1.15) translateX(-2%); transform-origin: center; border-radius: 18px;">
                                         <source
                                             src="assets/new_assets/Diapo 21/CPCC-SC-Triple Action Coating Technology-animation_h264.mov.mp4"
                                             type="video/mp4">
@@ -831,7 +882,7 @@
                             <div class="lubricacion-micro" style="flex: 1; padding-top: 110px; margin-left: -50px;">
                                 <div class="video-container-micro"
                                     style="width: 100%; max-width: 450px; border-radius: 12px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.12);">
-                                    <video autoplay muted loop playsinline style="width: 100%; display: block;">
+                                    <video controls playsinline style="width: 100%; display: block;">
                                         <source src="assets/video25(1).mp4" type="video/mp4">
                                     </video>
                                 </div>
